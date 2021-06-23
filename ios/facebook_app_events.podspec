@@ -13,7 +13,8 @@ Flutter plugin for Facebook Analytics and App Events
   s.public_header_files = 'Classes/**/*.h'
   s.dependency 'Flutter'
   s.dependency 'FBSDKCoreKit', '~> 11.0.0'
-  s.swift_version       = '4.0'
+  s.swift_version       = '5.0'
 
+  s.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES', 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'i386' }
   s.ios.deployment_target = '9.0'
 end
